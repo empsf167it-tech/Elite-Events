@@ -99,13 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let current = 0;
     
     const timer = setInterval(() => {
-      current += 1;
-      el.textContent = current;
+      current += Math.ceil(target / 80);
       if (current >= target) {
-        el.textContent = target; // Ensure exact final target is set
+        el.textContent = target + '+'; // Ensure exact final target is set with + symbol
         clearInterval(timer);
+      } else {
+        el.textContent = current + '+';
       }
-    }, Math.max(stepTime, 10));
+    }, Math.max(stepTime, 15));
   };
 
   // Intersection Observer to start counter when visible

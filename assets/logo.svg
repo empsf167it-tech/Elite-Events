@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5ceb0"/>
+      <stop offset="50%" stop-color="#e5a97c"/>
+      <stop offset="100%" stop-color="#c48356"/>
+    </linearGradient>
+  </defs>
+  <!-- Monogram Logo Icon -->
+  <g transform="translate(10, 8)">
+    <rect x="0" y="0" width="44" height="44" rx="10" fill="url(#goldGrad)"/>
+    <path d="M14 13 H30 V17 H18 V20 H28 V24 H18 V27 H30 V31 H14 Z" fill="#0f0a07"/>
+  </g>
+  <!-- Brand Text -->
+  <text x="66" y="38" font-family="'Outfit', 'Segoe UI', sans-serif" font-weight="800" font-size="22" fill="#ffffff" letter-spacing="3">ELITE</text>
+  <text x="142" y="38" font-family="'Outfit', 'Segoe UI', sans-serif" font-weight="800" font-size="22" fill="url(#goldGrad)" letter-spacing="3">EVENTS</text>
+</svg>

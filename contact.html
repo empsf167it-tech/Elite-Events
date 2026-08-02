@@ -6,6 +6,7 @@
   <title>Contact Us | Elite Events - Premium Event Planning & Management Agency</title>
   <meta name="description" content="Get in touch with Elite Events. Send us an inquiry, check our weekly hours of operation, see our contact numbers, or locate our New York design studio.">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
   <header class="header scrolled" id="site-header">
     <div class="container nav-container">
       <a href="index.html" class="logo" id="header-logo">
-        ELITE<span>EVENTS</span>
+        <img src="assets/logo.svg" alt="Elite Events Logo" style="height: 46px; display: block;">
       </a>
       
       <nav class="nav-menu-wrapper" aria-label="Main Navigation">
@@ -24,7 +25,7 @@
           <li><a href="services.html" class="nav-link" id="nav-link-services">Services</a></li>
           <li><a href="work.html" class="nav-link" id="nav-link-work">Our Work</a></li>
           <li><a href="about.html" class="nav-link" id="nav-link-about">About Us</a></li>
-          <li class="mobile-only"><a href="contact.html" class="nav-link active" id="nav-link-contact-mobile">Contact Us</a></li>
+          <li class="mobile-only" style="margin-top: 1.5rem;"><a href="contact.html" class="btn btn-primary" id="nav-link-contact-mobile" style="display: inline-flex; width: 100%; text-align: center; justify-content: center;">Contact Us</a></li>
         </ul>
       </nav>
       
@@ -88,25 +89,25 @@
               <textarea id="contact-message" class="form-control" placeholder="Tell us about your event..." required></textarea>
             </div>
             
-            <button type="submit" class="btn btn-primary" id="contact-submit-btn">Send Now</button>
+            <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%; text-align: center; justify-content: center; display: flex;">Send Now</button>
             <div class="success-msg" id="contact-success-msg" style="margin-top: 1.5rem;"></div>
           </form>
         </div>
         
         <!-- Right Side Schedule Panel -->
-        <div class="contact-schedule-panel" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="contact-schedule-panel" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 1.5rem;">
           <div class="working-hours-card" style="padding-left: 1rem;">
-            <h2 style="font-family: var(--font-headings); font-size: 2.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 2rem;">Our Working Schedule:</h2>
+            <h2 style="font-family: var(--font-headings); font-size: 2.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1.5rem;">Our Working Schedule:</h2>
             
-            <div class="schedule-rows" style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
+            <div class="schedule-rows" style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 1.5rem;">
               <div>
                 <h4 style="font-family: var(--font-headings); font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.25rem;">Monday-Friday:</h4>
-                <p style="color: var(--text-muted-dark); font-size: 0.9rem; font-weight: 600;">09:00 - 19:00</p>
+                <p style="color: var(--text-muted-dark); font-size: 0.9rem; font-weight: 600;">09:00 AM - 07:00 PM</p>
               </div>
               
               <div>
                 <h4 style="font-family: var(--font-headings); font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.25rem;">Saturday:</h4>
-                <p style="color: var(--text-muted-dark); font-size: 0.9rem; font-weight: 600;">10:00 - 18:00</p>
+                <p style="color: var(--text-muted-dark); font-size: 0.9rem; font-weight: 600;">10:00 AM - 06:00 PM</p>
               </div>
               
               <div>
@@ -115,7 +116,7 @@
               </div>
             </div>
             
-            <div style="width: 100%; height: 1px; background-color: rgba(229, 169, 124, 0.2); margin-bottom: 3rem;"></div>
+            <div style="width: 100%; height: 1px; background-color: rgba(229, 169, 124, 0.2); margin-bottom: 1.5rem;"></div>
           </div>
           
           <!-- Quick Contact Rows -->
@@ -226,7 +227,7 @@
         
         <!-- Col 2: Brand / Description -->
         <div class="footer-col footer-brand" id="footer-brand-info">
-          <div class="footer-logo">ELITE<span>EVENTS</span></div>
+          <div class="footer-logo"><img src="assets/logo.svg" alt="Elite Events Logo" style="height: 46px; display: block; margin: 0 auto;"></div>
           <p class="footer-desc">
             At Elite Events, we plan and execute all classes of celebrations. From small birthday soirées to massive corporate conventions, our logistics ensure breathtaking experiences.
           </p>

@@ -106,7 +106,8 @@ img {
   text-transform: uppercase;
   color: var(--primary);
   margin-bottom: 0.75rem;
-  display: inline-block;
+  display: block;
+  width: 100%;
   font-weight: 600;
 }
 
@@ -557,7 +558,8 @@ img {
   background-image: url('assets/hero_concert.png');
   background-size: cover;
   background-position: center;
-  min-height: 450px;
+  min-height: 360px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,7 +614,7 @@ img {
 
 .why-content {
   background-color: var(--bg-light-accent);
-  padding: 6rem;
+  padding: 3.5rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -753,10 +755,12 @@ img {
 
 .services-list-item::before {
   content: '';
-  width: 6px;
-  height: 6px;
-  border: 1px solid var(--primary);
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
   border-radius: var(--border-radius-full);
+  box-shadow: 0 0 0 2px rgba(229, 169, 124, 0.4);
+  flex-shrink: 0;
 }
 
 .services-phone {
@@ -1593,6 +1597,9 @@ textarea.form-control {
   .offer-images-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .offer-img-card {
+    height: 260px !important;
+  }
   
   .contact-main-grid {
     grid-template-columns: 1fr !important;
@@ -1603,6 +1610,9 @@ textarea.form-control {
 @media (max-width: 768px) {
   .offer-images-grid {
     grid-template-columns: 1fr !important;
+  }
+  .offer-img-card {
+    height: 480px !important;
   }
   
   .price-list-row {
@@ -1796,5 +1806,37 @@ textarea.form-control {
   
   .schedule-rows {
     gap: 1rem !important;
+  }
+
+  /* About page Incredible Experience stats vertical stacking */
+  .stat-item-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  .exp-stats-box {
+    padding: 3rem 2rem !important;
+    gap: 2.5rem !important;
+  }
+
+  /* Home page We Bring Ideas To Life mobile padding */
+  .why-content {
+    padding: 2.5rem 1.5rem !important;
+  }
+
+  /* Prevent logo grid overflow on 360px screens */
+  .why-logos {
+    gap: 1.25rem 1rem !important;
+  }
+  
+  .logo-text {
+    font-size: 0.95rem !important;
+  }
+
+  /* Services page cards on small mobile viewports */
+  .offer-img-card {
+    height: 340px !important;
   }
 }
